@@ -1,0 +1,23 @@
+:root {
+    /* THEME COLORS*/
+    --theme-text: #0c090b;
+    --theme-background: #fbfafb;
+    --theme-primary: #987990;
+    --theme-secondary: #c3b3b1;
+    --theme-accent: #ac9b94;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* THEME COLORS - DARK*/
+        --theme-text: #f6f3f5;
+        --theme-background: #060506;
+        --theme-primary: #85667d;
+        --theme-secondary: #4e3e3c;
+        --theme-accent: #6b5952;
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
