@@ -1,0 +1,60 @@
+.cards {}
+
+.card {}
+
+.card .cardImage {
+    flex: 0;
+}
+
+.card .cardTitle {
+    font-size: 2rem;
+    color: var(--theme-secondary);
+}
+
+.card .cardText {
+    font-size: 1.1875rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.card .cardDescription {}
+
+@media (min-width:480px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding-block-end: 60px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px) {
+    .cards {
+        grid-row: 3;
+        grid-column: 1/-1;
+        height: 180px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 28px;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

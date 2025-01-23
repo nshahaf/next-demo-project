@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+    align-items: center;
+    margin-inline: var(--margin-inline);
+    justify-content: space-between;
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+    color: var(--theme-neutral-2);
+}
+
+.nav a:hover {
+    color: var(--theme-neutral-1);
+}
+
+.nav a.active {
+    color: var(--theme-neutral-1);
+}
+
+@media (min-width:768px) {
+    .nav {
+        gap: 37.1px;
+    }
+
+}

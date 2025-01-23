@@ -1,10 +1,16 @@
 :root {
     /* THEME COLORS*/
     --theme-text: #0c090b;
-    --theme-background: #fbfafb;
-    --theme-primary: #987990;
-    --theme-secondary: #c3b3b1;
-    --theme-accent: #ac9b94;
+    --theme-background: #fefdf9;
+    --theme-primary: hsl(35, 77%, 62%);
+    --theme-secondary: hsl(5, 85%, 63%);
+
+    /* Neutral */
+    --theme-neutral-0: hsl(36, 100%, 99%);
+    --theme-neutral-1: hsl(233, 8%, 79%);
+    --theme-neutral-2: hsl(236, 13%, 42%);
+    --theme-neutral-3: hsl(240, 100%, 5%);
+
 }
 
 @media (prefers-color-scheme: dark) {
