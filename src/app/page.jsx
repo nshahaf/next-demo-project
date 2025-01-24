@@ -1,8 +1,10 @@
 import styles from "./page.module.css"
 import Cards from "@/components/Cards"
 import Aside from "@/components/Aside"
+import textData from "@/data/textData.json"
 
 export default function Page() {
+  const { cards, articles } = textData
 
   return (
     <div className={styles.grid}>
@@ -17,9 +19,8 @@ export default function Page() {
           <button>Read more</button>
         </div>
       </div>
-      <Aside />
-      <Cards />
-
+      <Aside articles={articles.slice(0, 3)} />
+      <Cards cards={cards.slice(0, 3)} />
     </div>
 
   )

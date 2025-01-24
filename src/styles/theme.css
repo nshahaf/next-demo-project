@@ -16,11 +16,11 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* THEME COLORS - DARK*/
-        --theme-text: #f6f3f5;
-        --theme-background: #060506;
-        --theme-primary: #85667d;
-        --theme-secondary: #4e3e3c;
-        --theme-accent: #6b5952;
+        /* --theme-text: #f6f3f5; */
+        /* --theme-background: #060506; */
+        /* --theme-primary: #85667d; */
+        /* --theme-secondary: #4e3e3c; */
+        /* --theme-accent: #6b5952; */
     }
 
     html {

@@ -19,6 +19,11 @@
     font-weight: 800;
     color: var(--theme-neutral-0);
     margin-bottom: 8px;
+
+    &:hover {
+        color: var(--theme-primary);
+        cursor: pointer;
+    }
 }
 
 .aside .secondaryText {

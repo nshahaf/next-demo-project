@@ -54,6 +54,12 @@
     letter-spacing: 4.4px;
     background-color: var(--theme-secondary);
     border: none;
+
+    &:hover {
+        color: white;
+        background-color: var(--theme-neutral-3);
+        cursor: pointer;
+    }
 }
 
 @media (min-width:768px) {
