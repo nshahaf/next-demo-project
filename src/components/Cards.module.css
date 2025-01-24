@@ -1,6 +1,13 @@
-.cards {}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.card {}
+.card {
+    display: flex;
+    gap: 20px;
+}
 
 .card .cardImage {
     flex: 0;
@@ -17,34 +24,18 @@
     letter-spacing: -0.5px;
 }
 
-.card .cardDescription {}
-
-@media (min-width:480px) {
-    .cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        padding-block-end: 60px;
-    }
-
-    .card {
-        display: flex;
-        gap: 20px;
-    }
-
-    .cardContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 @media (min-width:1024px) {
     .cards {
         grid-row: 3;
         grid-column: 1/-1;
-        height: 180px;
+        height: 219.5px;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -55,6 +46,15 @@
     .card {
         display: flex;
         flex-direction: row;
+        gap: 24px;
+    }
+
+    .cardTitle {
+        line-height: 2.175rem;
+    }
+
+    .cardDescription {
+        line-height: 1.625rem;
     }
 
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './Header.module.css'
 import NavLink from '@/components/NavLink'
 import logo from '@public/logo.svg'
+import MobileNav from './MobileNav'
 
 export default function Header() {
     return (
@@ -10,6 +11,7 @@ export default function Header() {
             <span className='logo-container'>
                 <Image src={logo} alt="logo" width={41} height={41} />
             </span>
+            <MobileNav />
             <nav className={styles.nav}>
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/new">New</NavLink>
