@@ -1,6 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Next.js Server Components & Data Fetching Exploration
+
+This project was created as an experiment to explore the features of the Next.js framework from the perspective of a React user. The main goal was to dive into Server Components and data fetching within the Next.js ecosystem to understand how these features enhance performance and simplify app architecture.
+
+Through this project, I aimed to:
+
+- Test Next.js server-side rendering and static site generation capabilities
+- Experiment with server components for better user experience and faster loading times
+- Understand how data fetching works in Next.js using both server-side and client-side methods
+- Practicing responsive and maintainable UI layouts with CSS Modules
+- Leveraging the seamless Vercel integration for easy deployment and scaling
+
+Feel free to explore the project and check out how the Next.js framework makes handling data fetching, rendering, and performance optimization much more efficient.
+
+## To run locally
 
 First, run the development server:
 
@@ -14,23 +27,13 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployed on Vercel
 
-## Learn More
+[https://next-demo-project-pi.vercel.app/](https://next-demo-project-pi.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshot:
+![image](https://github.com/user-attachments/assets/7c944081-4519-404a-80c6-1f242a00169f)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
