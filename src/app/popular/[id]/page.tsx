@@ -1,6 +1,8 @@
 //rendering a dynamic page on the server side (like blog post or any static data)
 
-async function fetchCardData(id) {
+import { Card } from "@/types"
+
+const fetchCardData = async (id: number): Promise<Card> => {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
     const res = await fetch(`${baseUrl}/api/cards/${id}`, { method: 'GET', cache: 'no-cache' })
     const data = await res.json()
@@ -8,7 +10,11 @@ async function fetchCardData(id) {
 }
 
 
-export default async function page({ params }) {
+interface Props {
+    params: Promise<{ id: number }>
+}
+
+const Page: React.FC<Props> = async ({ params }) => {
     const { id } = await params
     const card = await fetchCardData(id)
     return (
@@ -18,3 +24,5 @@ export default async function page({ params }) {
         </div>
     )
 }
+
+export default Page

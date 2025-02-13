@@ -5,7 +5,7 @@ import NavLink from '@/components/NavLink'
 import logo from '@public/logo.svg'
 import MobileNav from './MobileNav'
 
-export default function Header() {
+const Header: React.FC = () => {
     return (
         <header className={styles.header}>
             <span className='logo-container'>
@@ -22,3 +22,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header

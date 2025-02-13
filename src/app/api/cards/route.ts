@@ -3,7 +3,7 @@ import data from "@/data/textData.json"
 const { cards } = data
 
 
-export async function GET(req) {
+export async function GET(req: Request) {
     return NextResponse.json(cards)
 
 }

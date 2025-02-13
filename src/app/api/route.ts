@@ -8,7 +8,7 @@ export async function PUT() {
     return NextResponse.json({ message: "Hello" })
 }
 
-export async function POST(req) {
+export async function POST(req: Request) {
     const data = await req.json()
     return NextResponse.json(data)
 }

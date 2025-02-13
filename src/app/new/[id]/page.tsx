@@ -1,10 +1,14 @@
 'use client'
 import React from 'react'
 import useSWR from 'swr'
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
+const fetcher = (...args: any) => fetch(args).then((res) => res.json())
 
-export default function Page({ params }) {
-    const { id } = React.use(params)
+interface Props {
+    params: Promise<{ id: string }>
+}
+
+const Page: React.FC<Props> = ({ params }) => {
+    const { id } = React.use(params);
     const { data: article, error, isLoading } = useSWR(`/api/articles/${id}`, fetcher)
 
     if (isLoading) return <h1>Loading...</h1>
@@ -16,3 +20,5 @@ export default function Page({ params }) {
         </div>
     )
 }
+
+export default Page

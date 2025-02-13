@@ -6,8 +6,8 @@ import OpenIcon from '@public/icon-menu.svg'
 import { useState } from 'react'
 import NavLink from './NavLink'
 
-export default function MobileNav() {
-    const [isOpen, setIsOpen] = useState(false)
+const MobileNav: React.FC = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
     return (
         <>
             <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}>
@@ -25,3 +25,5 @@ export default function MobileNav() {
         </>
     )
 }
+
+export default MobileNav

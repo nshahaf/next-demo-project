@@ -3,7 +3,6 @@ import data from "@/data/textData.json"
 const { articles } = data
 
 
-export async function GET(req) {
+export async function GET() {
     return NextResponse.json(articles)
-
 }

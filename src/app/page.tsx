@@ -2,9 +2,10 @@ import styles from "./page.module.css"
 import Cards from "@/components/Cards"
 import Aside from "@/components/Aside"
 import textData from "@/data/textData.json"
+import { Article, Card } from "@/types"
 
-export default function Page() {
-  const { cards, articles } = textData
+const App: React.FC = () => {
+  const { cards, articles }: { cards: Card[], articles: Article[] } = textData
 
   return (
     <div className={styles.grid}>
@@ -25,3 +26,5 @@ export default function Page() {
 
   )
 }
+
+export default App

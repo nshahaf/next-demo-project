@@ -2,9 +2,10 @@
 
 import styles from '@/components/Cards.module.css'
 import Image from 'next/image'
+import { Card } from '@/types'
 
-async function fetchCards() { // Fetch cards posts from API
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+const fetchCards = async (): Promise<Card[]> => { // Fetch cards posts from API
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
     const res = await fetch(`${baseUrl}/api/cards`, { method: 'GET', cache: 'no-cache' })
     if (!res.ok) {
         throw new Error('Failed to fetch posts')
@@ -14,7 +15,7 @@ async function fetchCards() { // Fetch cards posts from API
     return data
 }
 
-export default async function page() {
+const PopularPage: React.FC = async () => {
     const cards = await fetchCards()
 
     return (
@@ -37,4 +38,4 @@ export default async function page() {
     )
 }
 
-
+export default PopularPage

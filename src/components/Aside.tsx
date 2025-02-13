@@ -1,8 +1,8 @@
 import Link from "next/link"
 import styles from "./Aside.module.css"
+import { Articles } from "@/types";
 
-export default function Aside({ articles = [] }) {
-
+const Aside = ({ articles = [] }: Articles) => {
     return (
         <aside className={styles.aside}>
             <h3 className={styles.mainTitle}>New</h3>
@@ -18,3 +18,5 @@ export default function Aside({ articles = [] }) {
         </aside>
     )
 }
+
+export default Aside
